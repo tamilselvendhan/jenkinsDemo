@@ -11,7 +11,7 @@ import java.util.ArrayList;
 @RequestMapping("/api")
 public class usersController {
 
-    @GetMapping(value = "/users")
+    @GetMapping(value = "/users", produces = "application/json")
     public ArrayList<Users> getUserNames() {
         Users u = new Users(1, "Jack");
         Users u1 = new Users(2, "Jone");
